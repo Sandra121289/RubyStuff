@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class Betraege < ActiveRecord::Base
   attr_accessible :betrag, :name, :vorname, :email
 
