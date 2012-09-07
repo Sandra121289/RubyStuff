@@ -3,8 +3,9 @@ class CreateBetraeges < ActiveRecord::Migration
     create_table :betraeges do |t|
       t.string :vorname
       t.string :name
-      t.decimal :betrag, :precision => 7, :scale => 2
       t.string :email
+      t.decimal :betrag, :precision => 7, :scale => 2
+
       t.timestamps
     end
   end

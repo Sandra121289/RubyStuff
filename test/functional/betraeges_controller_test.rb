@@ -18,7 +18,7 @@ class BetraegesControllerTest < ActionController::TestCase
 
   test "should create betraege" do
     assert_difference('Betraege.count') do
-      post :create, :betraege => { :betrag => @betraege.betrag, :name => @betraege.name }
+      post :create, :betraege => { :betrag => @betraege.betrag, :email => @betraege.email, :name => @betraege.name, :vorname => @betraege.vorname }
     end
 
     assert_redirected_to betraege_path(assigns(:betraege))
@@ -35,7 +35,7 @@ class BetraegesControllerTest < ActionController::TestCase
   end
 
   test "should update betraege" do
-    put :update, :id => @betraege, :betraege => { :betrag => @betraege.betrag, :name => @betraege.name }
+    put :update, :id => @betraege, :betraege => { :betrag => @betraege.betrag, :email => @betraege.email, :name => @betraege.name, :vorname => @betraege.vorname }
     assert_redirected_to betraege_path(assigns(:betraege))
   end
 

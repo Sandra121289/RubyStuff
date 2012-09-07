@@ -10,13 +10,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120907150600) do
+ActiveRecord::Schema.define(:version => 20120907234653) do
 
   create_table "betraeges", :force => true do |t|
     t.string   "vorname"
     t.string   "name"
-    t.decimal  "betrag",     :precision => 7, :scale => 2
     t.string   "email"
+    t.decimal  "betrag",     :precision => 7, :scale => 2
     t.datetime "created_at",                               :null => false
     t.datetime "updated_at",                               :null => false
   end

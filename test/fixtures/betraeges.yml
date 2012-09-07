@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  vorname: MyString
   name: MyString
+  email: MyString
   betrag: 9.99
 
 two:
+  vorname: MyString
   name: MyString
+  email: MyString
   betrag: 9.99
