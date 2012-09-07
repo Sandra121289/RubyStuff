@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ChrisGeburtstag</title>
+  <title>ADAC Sicherheitstraining für Christophs Geburtstag</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+<div class="wrapper">
+        <div class="header">
+            <%= image_tag("fahrsTraining.png") %>
+        </div>	    
+        <div class="content">
+            <%= yield %>
+        </div> 	       
+    </div>
 
 </body>
 </html>
+

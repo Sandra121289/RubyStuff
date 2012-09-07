@@ -1,0 +1,15 @@
+<table>
+<th>Vorname</th>
+<th>Name</th>
+<th>Email</th>
+<th>Betrag</th>
+<% @betraeges.each do |betraege| %>
+<tr>
+<td><%= betraege.vorname %></td>
+<td><%= betraege.name %></td>  
+<td><%= betraege.email %></td>
+<td><%= number_to_currency(betraege.betrag) %></td>
+</tr>
+<% end %>
+</table>
+

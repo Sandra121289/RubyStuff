@@ -1,4 +1,8 @@
 ChrisGeburtstag::Application.routes.draw do
+  resources :betraeges
+  match "/sandra121289" => "betraeges#showAll"
+  root :to => "betraeges#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

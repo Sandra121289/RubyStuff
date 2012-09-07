@@ -1,0 +1,2 @@
+module BetraegesHelper
+end

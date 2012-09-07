@@ -1,0 +1,51 @@
+<h1>Geld dazugeben</h1>
+
+<%= form_for @betraege, :url => { :action => "create" }, :html => {:class => "nifty_form"} do |f| %>
+<%= render "error_messages" %>
+<table>
+<tr>
+<td>
+<%= f.label :vorname %>
+</td>
+<td>
+  <%= f.text_field :vorname, :size => 20 %>
+</td>
+</tr>
+<tr>
+<td>
+<%= f.label :name %>
+</td>
+<td>
+  <%= f.text_field :name, :size => 20 %>
+</td>
+</tr>
+<tr>
+<td>
+<%= f.label :email %>
+</td>
+<td>
+  <%= f.text_field :email, :size => 20 %>
+</td>
+</tr>
+<tr>
+<td>
+<%= f.label :betrag %>
+</td>
+<td>
+ <%= f.text_field :betrag , :size => 20 %>
+</td>
+</tr>
+<tr>
+<td>
+ <%= f.submit "Speichern" %>
+</td>
+</tr>
+</table>
+<% end %>
+<br />
+<br />
+
+<center><%= link_to 'Zurück', betraeges_path %></center>
+<br />
+<br />
+<br />

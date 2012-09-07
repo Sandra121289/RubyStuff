@@ -1,0 +1,25 @@
+
+<div class="subheader">
+<p class="counter">>> Bisherige Summe: <%= number_to_currency(@total) %> / <%= number_to_currency(165) %> <<</p>
+Alle bisherigen Beträge: 
+<% @betraeges.each do |betraege| %>
+    <%= number_to_currency(betraege.betrag) %>
+    <%if not betraege == @betraeges.last %>,<%end%>
+<% end %>
+<br />
+<br />
+<br />
+</div>
+
+
+<h2>ADAC Fahrsicherheitstraining für Christophs Geburtstag</h2>
+<p>Christoph hat mir gegenüber den Wunsch geäußert, dass er gerne mal ein Fahrsicherheitstraining vom ADAC machen würde, inklusive Aquaplaning-Strecke, Wasserfontänen und allem drum und dran! Und da am 04.10. wieder sein Geburtstag ist, dachte ich mir, dass wir alle zusammenlegen könnten um ihm das zu verwirklichen.<p>
+<p> Leider ist so ein Training nicht wirklich billig, 165 Euro! (Siehe <%= link_to "hier", "http://www.adac.de/produkte/fahrsicherheitstraining/privatpersonen/pkw-training/default.aspx#8" %> unter Intensivtraining, plus 10 Euro Wochenendzuschlag)
+</p>
+<p> Wenn das Geld zusammenkommt, werde ich beim ADAC den Gutschein bestellen und dann bei euch das Geld einsammeln kommen^^</p>
+<p>Bitte tragt euch mit Namen und Adresse über untenstehenden Link ein, falls ihr euch beteiligen wollt!</p>
+<center><%= link_to 'Geld dazugeben', new_betraege_path %></center>
+
+
+<p>PS: Ich wollte mal Ruby on Rails ausprobieren und hab das hier innerhalb eines Tages zusammengehackt, nicht wundern wenn es ein bissi hässlich is xD</p>
+<br />

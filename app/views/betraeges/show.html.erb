@@ -1,0 +1,21 @@
+<p id="notice">Danke für deinen Beitrag!</p>
+
+<p>
+  <b>Vorname:</b>
+  <%= @betraege.vorname %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @betraege.name %>
+</p>
+<p>
+  <b>E-Mail-Adresse:</b>
+  <%= @betraege.email %>
+</p>
+<p>
+  <b>Betrag:</b>
+  <%= number_to_currency(@betraege.betrag) %>
+</p>
+
+<center><%= link_to 'Zurück', betraeges_path %></center>
